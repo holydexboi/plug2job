@@ -51,15 +51,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-cover bg-no-repeat bg-center pt-80 px-20  bg-my_bg_image md:h-screen pb-10 ">
+      <main className="bg-cover bg-no-repeat bg-center pt-10 md:pt-80 px-10 md:px-20  mb-20 bg-my_bg_image md:h-screen pb-10 ">
         <div className="flex justify-center pt-12">
           <p className="text-secondary text-5xl">
             Find your dream job with ease
           </p>
         </div>
-        <div className="flex justify-center pt-5">
-          <div className="w-2/3 h-20 px-6 py-4 bg-primary rounded-lg">
-            <form className="flex gap-1 items-stretch">
+        <div className="flex justify-center pt-5 pb-10 md:pb-0 ">
+          <div className="w-full md:w-2/3  px-6 py-4 bg-primary rounded-lg">
+            <form className="md:flex  space-y-4 md:space-y-0 gap-1 items-stretch">
               <div className="w-full">
                 <TextInput
                   id="title"
@@ -70,7 +70,7 @@ export default function Home() {
               <div className="w-full">
                 <TextInput id="city" type="text" placeholder="city, or state" />
               </div>
-              <div className="w-1/2 h-full">
+              <div className="w-full md:w-1/2 h-full md:block flex justify-center ">
                 <Button
                   style={{
                     backgroundColor: "#1eb432",
@@ -84,34 +84,37 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <div className="flex justify-center">
+      <div className="flex justify-center ">
         <hr className=" w-12 h-3 bg-secondary rounded-xl place-self-center"></hr>
       </div>
-      <section className="bg-cover bg-no-repeat bg-center px-20  bg-body_bg md:h-screen pb-10">
-        <div className="flex justify-between">
-          <div className="mt-40 basis-1/2">
-            <p className="text-3xl text-secondary font-medium">
-              All hands on deck
-            </p>
-            <p className="text-justify">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis cum
-              laborum earum repudiandae aliquid error magnam eaque, doloremque,
-              sapiente cumque facilis praesentium voluptate tenetur esse, sint
-              libero nostrum voluptates recusandae? Ratione maxime earum autem
-              laborum iure laudantium quam ut magni id cumque, aspernatur harum
-              odit officia itaque ipsa minus ad, facere veritatis? Ducimus
-              laboriosam provident alias fugiat veritatis asperiores eius.
-            </p>
-            <div className="flex gap-2 mt-5">
-              <button className="px-6 py-1 bg-secondary rounded text-white outline-none">
-                Apply jobs
-              </button>
-              <button className="px-6 py-1 bg-gray-400 rounded text-white outline-none">
-                Build resume
-              </button>
+      <section className="bg-cover bg-no-repeat bg-center   md:px-20 px-10  bg-body_bg  pb-10">
+        <div className="md:flex justify-between">
+          <div className="mt-20 md:mt-40 md:basis-1/2">
+            <div className="md:pt-20">
+              <p className="text-4xl pb-5 font-bold text-secondary ">
+                All hands on deck
+              </p>
+              <p className="text-justify text-lg font-semibold">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                cum laborum earum repudiandae aliquid error magnam eaque,
+                doloremque, sapiente cumque facilis praesentium voluptate
+                tenetur esse, sint libero nostrum voluptates recusandae? Ratione
+                maxime earum autem laborum iure laudantium quam ut magni id
+                cumque, aspernatur harum odit officia itaque ipsa minus ad,
+                facere veritatis? Ducimus laboriosam provident alias fugiat
+                veritatis asperiores eius.
+              </p>
+              <div className="flex gap-2 space-x-2 mt-5">
+                <button className="px-6 py-3 text-lg bg-secondary rounded text-white outline-none">
+                  Apply jobs
+                </button>
+                <button className="px-6 py-3 text-lg bg-gray-400 rounded text-white outline-none">
+                  Build resume
+                </button>
+              </div>
             </div>
           </div>
-          <div className="mt-5 basis-1/3">
+          <div className="mt-5 md:basis-1/3">
             <Image src={Section1} width={700} height={700} alt="job seeker" />
           </div>
         </div>
@@ -119,21 +122,21 @@ export default function Home() {
       <div className="flex justify-center">
         <hr className=" w-12 h-3 bg-secondary rounded-xl place-self-center"></hr>
       </div>
-      <section className="bg-cover bg-no-repeat bg-center px-20  bg-layout_bg md:h-1/2 pb-10">
-        <div className="flex  justify-between">
-          <div className="flex flex-col basis-1/2">
+      <section className="bg-cover bg-no-repeat bg-center mt-10 px-10 md:px-20  bg-layout_bg md:h-1/2 pb-10">
+        <div className="md:flex  justify-between">
+          <div className="md:flex md:flex-col md:basis-1/2">
             <div>
               <Image src={Agent} width={700} height={500} alt="agent" />
             </div>
-            <div className="-mt-12 ml-12">
+            <div className="md:-mt-12 -mt-6 ml-6 md:ml-12">
               <Image src={Hire} width={300} height={100} alt="hire banner" />
             </div>
           </div>
-          <div className=" mt-40 basis-1/2">
-            <p className="text-3xl text-secondary font-medium">
-              Loooking to Hire?
+          <div className="mt-10 md:mt-40 md:basis-1/2">
+            <p className="text-4xl pb-3  text-secondary font-bold">
+              Looking to Hire?
             </p>
-            <p className="text-justify mt-2">
+            <p className="text-justify text-lg font-semibold mt-2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis cum
               laborum earum repudiandae aliquid error magnam eaque, doloremque,
               sapiente cumque facilis praesentium voluptate tenetur esse, sint
@@ -143,7 +146,7 @@ export default function Home() {
               laboriosam provident alias fugiat veritatis asperiores eius.
             </p>
             <div className="flex mt-5">
-              <button className="px-6 py-1 bg-secondary rounded text-white outline-none">
+              <button className="px-6 py-3 text-lg  bg-secondary rounded text-white outline-none">
                 Post jobs
               </button>
             </div>
@@ -153,13 +156,13 @@ export default function Home() {
       <div className="flex justify-center">
         <hr className=" w-12 h-3 bg-secondary rounded-xl place-self-center"></hr>
       </div>
-      <section className="bg-cover bg-no-repeat bg-center px-20 mt-10  bg-layout_bg1 md:h-1/2 pb-10">
-        <div className="flex justify-between">
-          <div className="mt-40 basis-1/2">
-            <p className="text-3xl text-secondary font-medium">
+      <section className="bg-cover bg-no-repeat bg- px-10 md:px-20 mt-10  bg-layout_bg1 md:h-1/2 pb-10">
+        <div className="md:flex justify-between ">
+          <div className="pt-20 md:pt-40 md:basis-1/2">
+            <p className="text-3xl pb-3 text-secondary font-bold">
               Connect to Employers
             </p>
-            <p className="text-justify">
+            <p className="text-justify text-lg font-semibold">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis cum
               laborum earum repudiandae aliquid error magnam eaque, doloremque,
               sapiente cumque facilis praesentium voluptate tenetur esse, sint
@@ -168,25 +171,25 @@ export default function Home() {
               odit officia itaque ipsa minus ad, facere veritatis? Ducimus
               laboriosam provident alias fugiat veritatis asperiores eius.
             </p>
-            <div className="flex gap-2 mt-5">
-              <button className="px-6 py-1 bg-secondary rounded text-white outline-none">
+            <div className="flex gap-2 space-x-2 mt-5">
+              <button className="px-6 py-3 text-lg bg-secondary rounded text-white outline-none">
                 Connect to Employer
               </button>
-              <button className="px-6 py-1 bg-gray-400 rounded text-white outline-none">
+              <button className="px-3 md:px-6 py-2 md:py-3 text-lg bg-gray-400 rounded text-white outline-none">
                 Post Jobs
               </button>
             </div>
           </div>
-          <div className="basis-1/3 -mt-12">
+          <div className="md:basis-1/3 -mt-6 md:-mt-12">
             <Image src={Employer} width={500} height={700} alt="job seeker" />
           </div>
         </div>
       </section>
-      <section className=" px-32 pb-10">
+      <section className="px-6 mt-10 md:mt-0 md:px-32 pb-10">
         <div className="flex justify-center">
-          <p className="text-secondary text-5xl">Our Partners</p>
+          <p className="text-secondary font-bold text-5xl">Our Partners</p>
         </div>
-        <div className="flex justify-between mt-12 ">
+        <div className="flex justify-evenly md:justify-between mt-12 ">
           <Image src={Part1} width={200} alt="partner 1" />
           <Image src={Part2} width={200} alt="partner 2" />
           <Image src={Part3} width={200} alt="partner 3" />
@@ -208,7 +211,7 @@ export default function Home() {
                 <div>
                   <span className="w-8 pr-5">
                     <svg
-                      className="fill-primary w-5 font-bold"
+                      className="fill-primary font-bold"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 448 512"
                     >
@@ -216,10 +219,21 @@ export default function Home() {
                     </svg>
                   </span>
                 </div>
+                <div>
+                  <span className="w-8 pr-5">
+                    <svg
+                      className="fill-primary"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                    </svg>
+                  </span>
+                </div>
                 <div className="w-3 ">
                   <span>
                     <svg
-                      className="fill-primary w-5"
+                      className="fill-primary"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 320 512"
                     >
@@ -227,14 +241,14 @@ export default function Home() {
                     </svg>
                   </span>
                 </div>
-                <div>
-                  <span className="w-8 pr-8">
+                <div className="w-5">
+                  <span>
                     <svg
-                      className="fill-primary w-5"
+                      className="fill-primary"
                       xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 512 512"
+                      viewBox="0 0 448 512"
                     >
-                      <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                      <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
                     </svg>
                   </span>
                 </div>
@@ -243,7 +257,7 @@ export default function Home() {
             <div className="col-span-2">
               <div className="grid grid-flow-row-dense lg:grid-cols-5 gap-8 md:gap-2 mb-12 justify-between w-full px-5 pt-5 pb-2 mx-auto grid-cols-2">
                 <div className="font-inter font-medium text-0.6xl">
-                  <p className="text-base border-b-2 w-1/2 border-secondary mb-5 font-san text-primary">
+                  <p className="text-base border-b-2 w-2/3 md:w-1/2 border-secondary mb-5 font-san text-primary">
                     Job Seeker
                   </p>
                   <a href="">
@@ -262,7 +276,7 @@ export default function Home() {
                   </a>
                 </div>
                 <div className="font-inter font-medium text-0.6xl ">
-                  <p className="text-base border-b-2 w-1/2 border-secondary mb-5 font-san text-primary">
+                  <p className="text-base border-b-2 md:w-2/3 border-secondary mb-5 font-san text-primary">
                     Recruiter Agent
                   </p>
                   <a href="">
@@ -281,7 +295,7 @@ export default function Home() {
                   </a>
                 </div>
                 <div className="font-inter font-medium text-0.6xl ">
-                  <p className="text-base border-b-2 w-1/2 border-secondary mb-5 font-san text-primary">
+                  <p className="text-base border-b-2 w-2/3 border-secondary mb-5 font-san text-primary">
                     Employer
                   </p>
                   <a href="">
@@ -292,13 +306,13 @@ export default function Home() {
                   </a>
                 </div>
                 <div className="font-inter font-medium text-0.2xl">
-                  <p className="text-base border-b-2 w-1/2 border-secondary mb-5 font-san text-primary">
+                  <p className="text-base border-b-2  border-secondary mb-5 font-san text-primary">
                     Goverment Agencies
                   </p>
                 </div>
                 <div className="font-inter font-medium text-0.6xl">
-                  <p className="text-base border-b-2 w-1/2 border-secondary mb-5 font-san text-primary">
-                    Militan and Paramilitary
+                  <p className="text-base border-b-2  border-secondary mb-5 font-san text-primary">
+                    Military and Paramilitary
                   </p>
                 </div>
               </div>

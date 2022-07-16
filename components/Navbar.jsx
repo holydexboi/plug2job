@@ -3,6 +3,7 @@ import { useState } from "react";
 import Logo from "../assets/images/logo.png";
 import Image from "next/image";
 
+
 export const Navbar = ({ onClick, navbar }) => {
   const [active, setActive] = useState(false);
 
@@ -15,7 +16,7 @@ export const Navbar = ({ onClick, navbar }) => {
       <nav
         className={
           !navbar
-            ? "z-10 sticky top-0 bg-nav bg-cover bg-no-repeat  flex items-center flex-wrap  py-3 md:px-20 px-5 backdrop-blur-xs"
+            ? "z-10 sticky top-0 bg-nav bg-cover bg-no-repeat   flex items-center flex-wrap bg-my_bg_image  py-3 md:px-20 px-5 "
             : "z-10 sticky top-0 bg-footer flex items-center flex-wrap  py-4 md:px-24 px-5  backdrop-blur-xs"
         }
       >
